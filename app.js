@@ -9,7 +9,8 @@ app.use(express.json())
 app.use(cors())
 //availible routes
 
-app.use('/api/login', require('./router/LoginRoute'))
+app.use('/api/login', require('./router/LoginRoute'));
+app.use('/api/regester', require('./router/RegesterRoute'));
 
 app.listen(port, () => {
     console.log(`Server is listening at http://localhost:${port}`)
